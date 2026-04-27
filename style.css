@@ -1,0 +1,432 @@
+/* ================= RESET ================= */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Poppins:wght@400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root {
+    /* Colors */
+    --primary-color: #36678a;
+    --secondary-color: #9eccd2;
+    --white-color: #ffffff;
+    --light-pink-color: #f7e6e6; /* Ditambahkan */
+    --light-dark_color: #f4f6f9; /* Ditambahkan */
+    --text-color: #333333;
+
+    /* Fonts & Sizes */
+    --font-size-m: 16px;
+    --font-size-l: 20px;
+    --font-size-xl: 24px;
+    --font-size-xxl: 32px;
+    --font-weight-semibold: 600; /* Ditambahkan */
+
+    /* Radius */
+    --border-radius-s: 3px; /* Ditambahkan */
+    --border-radius-m: 5px;
+    --border-radius-circle: 50%; /* Ditambahkan */
+}
+
+ul { list-style: none; }
+a { text-decoration: none; }
+button { border: none; background: none; cursor: pointer; }
+img { width: 100%; display: block; }
+
+.section-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* ================= NAVBAR ================= */
+header {
+    background: var(--primary-color);
+    width: 120%;
+} 
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 9999;
+    background: var(--primary-color);
+}
+
+.logo-text {
+    color: var(--white-color);
+    font-size: var(--font-size-xl);
+}
+
+.section-title {
+    text-align: center;
+    padding: 60px 0 40px;
+    text-transform: uppercase;
+    font-size: var(--font-size-xl);
+}
+
+.section-title::after {
+    content: '';
+    width: 80px;
+    height: 5px;
+    display: block;
+    margin: 15px auto 0;
+    border-radius: var(--border-radius-s);
+    background: var(--secondary-color);
+}
+
+/* MENU DESKTOP */
+.nav-menu {
+    display: flex;
+    gap: 15px;
+}
+
+.nav-link {
+    color: var(--white-color);
+    padding: 10px 18px;
+    border-radius: var(--border-radius-m);
+    font-size: var(--font-size-m);
+    transition: 0.3s;
+}
+
+.nav-link:hover {
+    background: var(--secondary-color);
+    color: var(--primary-color);
+}
+
+/* BUTTON MENU */
+#menu-open-button,
+#menu-close-button {
+    font-size: 24px;
+    color: var(--white-color);
+    display: none;
+    z-index: 10000;
+}
+
+/* ================= HERO ================= */
+.hero-section {
+    min-height: 100vh;
+    background: var(--primary-color);
+    position: relative;
+    padding-top: 80px; /* Offset for fixed navbar */
+}
+
+.hero-section .section-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+    min-height: calc(100vh - 80px);
+    color: var(--white-color);
+}
+
+.hero-details .subtitle {
+    color: var(--secondary-color);
+    font-size: var(--font-size-l);
+    margin-bottom: 10px;
+}
+
+.hero-details .title {
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 15px;
+    line-height: 1.2;
+}
+
+.hero-details .description {
+    font-size: var(--font-size-m);
+    margin-bottom: 25px;
+    line-height: 1.6;
+}
+
+/* BUTTONS */
+.buttons {
+    display: flex;
+    gap: 15px;
+}
+
+.button {
+    padding: 12px 24px;
+    border-radius: 30px;
+    font-size: var(--font-size-m);
+    transition: 0.3s;
+    font-weight: var(--font-weight-semibold);
+}
+
+.order-now {
+    background: var(--secondary-color);
+    color: var(--primary-color);
+}
+
+.contact-us {
+    border: 2px solid var(--white-color);
+    color: var(--white-color);
+}
+
+.order-now:hover {
+    background: var(--white-color);
+}
+
+.contact-us:hover {
+    background: var(--white-color);
+    color: var(--primary-color);
+}
+
+.hero-image-wrapper img {
+    max-width: 450px;
+}
+
+/* ================= ABOUT ================= */
+.about-section {
+    padding: 80px 0;
+    background: var(--white-color);
+}
+
+.about-section .section-content {
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Typo diperbaiki disini dari 'about-image-wraper' */
+.about-section .about-image-wrapper .about-image {
+    width: 350px;
+    height: 350px;
+    object-fit: cover;
+    border-radius: var(--border-radius-circle);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+.about-section .about-details {
+    max-width: 50%;
+}
+
+.about-section .about-details .section-title {
+    padding: 0;
+    text-align: left;
+}
+
+.about-section .about-details .section-title::after {
+    margin: 15px 0 0;
+}
+
+.about-section .about-details .text {
+    line-height: 1.8;
+    margin: 30px 0;
+    font-size: var(--font-size-m);
+    color: var(--text-color);
+}
+
+.about-section .social-link-list {
+    display: flex;
+    gap: 20px;
+}
+
+.about-section .social-link-list .social-link {
+    font-size: 22px;
+    color: var(--primary-color);
+    transition: 0.3s ease;
+}
+
+.about-section .social-link-list .social-link:hover {
+    color: var(--secondary-color);
+}
+
+/* ================= LIBRARY SECTION ================= */
+.library-section {
+    padding: 80px 0 100px;
+    background: var(--dark-color);
+    color: var(--text-color);
+}
+
+.library-section .library-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px; /* Diubah dari 110% ke px absolut */
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.library-section .library-item {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    width: calc(33.333% - 30px); /* Membagi 3 kolom */
+    background: var(--white-color);
+    padding: 30px 20px;
+    border-radius: var(--border-radius-m);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease;
+}
+
+.library-section .library-item:hover {
+    transform: translateY(-5px);
+}
+
+.library-section .library-item .library-image {
+    width: 100%;
+    max-width: 180px;
+    height: 250px;
+    margin-bottom: 20px;
+    object-fit: cover; /* Agar cover buku proporsional */
+    border-radius: var(--border-radius-s);
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.library-section .library-item .library-title {
+    font-size: var(--font-size-l);
+    font-weight: var(--font-weight-semibold);
+    margin-bottom: 15px;
+    color: var(--primary-color);
+}
+
+.library-section .library-item .text {
+    font-size: 14px;
+    line-height: 1.6;
+    color: #666;
+}
+
+/* ================= Galery ================= */
+
+.galery-section .galery{
+    display: flex;
+    flex-direction: column;
+    padding: 35px;
+    text-align: center;
+    align-items: center;
+}
+
+.galery-section {
+    padding: 50px 0 100px;
+    background: var(--light-pink-color);
+ }
+
+ .galery-section .galery .user-image {
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    margin-bottom: 50px;
+    border-radius: var(--border-radius-circle);
+ }
+
+.galery-section .galery .name {
+    margin-bottom: 20px;
+    font-size: var(--font-size-l);
+}
+
+.galery-section .galery .feedback {
+    line-height: 25px;
+} 
+
+.swiper {
+    width: 100%;
+    height: 400px;
+}
+
+/* ================= RESPONSIVE MEDIA QUERIES ================= */
+@media screen and (max-width: 1024px) {
+    .library-section .library-item {
+        width: calc(50% - 30px); /* 2 kolom di tablet */
+    }
+    
+    .hero-details .title {
+        font-size: 32px;
+    }
+}
+
+@media (max-width: 768px) {
+    /* MOBILE MENU TOGGLE */
+    #menu-open-button {
+        display: block;
+    }
+
+    body.show-mobile-menu header::before {
+        content: '';
+        position: fixed;
+        right: 0;
+        top: 0;
+        height: 100%;
+        width: 100%;
+        backdrop-filter: blur(5px);
+        background: rgba(0, 0, 0, 0.5);
+        z-index: 9998;
+    }
+
+    .nav-menu {
+        position: fixed;
+        top: 0;
+        right: -100%; 
+        width: 70%;
+        height: 100%;
+        background: var(--primary-color);
+        flex-direction: column;
+        align-items: center;
+        padding-top: 100px;
+        transition: right 0.3s ease;
+        z-index: 9999;
+    }
+
+    body.show-mobile-menu .nav-menu {
+        right: 0;
+    }
+
+    body.show-mobile-menu #menu-close-button {
+        display: block;
+        position: absolute;
+        top: 25px;
+        right: 25px;
+    }
+
+    /* HERO MOBILE */
+    .hero-section .section-content {
+        flex-direction: column-reverse;
+        text-align: center;
+        padding: 40px 20px;
+        gap: 30px;
+    }
+
+    .hero-details .buttons {
+        justify-content: center;
+    }
+
+    .hero-image-wrapper img {
+        max-width: 280px;
+        margin: 0 auto;
+    }
+
+    /* ABOUT MOBILE */
+    .about-section .section-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-section .about-details {
+        max-width: 100%;
+    }
+
+    .about-section .about-details .section-title {
+        text-align: center;
+    }
+
+    .about-section .about-details .section-title::after {
+        margin: 15px auto 0;
+    }
+
+    .about-section .social-link-list {
+        justify-content: center;
+    }
+
+    /* LIBRARY MOBILE */
+    .library-section .library-item {
+        width: 100%; /* 1 kolom di HP */
+    }
+}

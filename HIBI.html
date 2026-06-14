@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HIBI | Shirayuki</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header id="header">
+        <nav class="navbar section-content">
+            <a href="#" class="nav-logo">
+                <h2 class="logo-text">HIBI</h2>
+            </a>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+                <li class="nav-item"><a href="#library" class="nav-link">Library</a></li>
+                <li class="nav-item"><a href="#gallery" class="nav-link">Gallery</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Contact</a></li>
+            </ul>
+            <button id="menu-open-button" class="fa-solid fa-bars"></button>
+            <button id="menu-close-button" class="fa-solid fa-times"></button>       
+        </nav>
+    </header>
+    
+    <main>
+        <section class="hero-section" id="home">
+            <div class="section-content">
+                <div class="hero-details fade-in">
+                    <h3 class="subtitle">Teman Baca Kamu &lt; 3</h3>
+                    <h1 class="title">Buat Hari Mu Lebih Baik Dengan Membaca</h1>
+                    <p class="description">
+                        Welcome to our library, where every book tells a story and every page sparks joy. Mulailah petualangan literasimu di sini.
+                    </p>
+                    <div class="buttons">
+                        <a href="#library" class="button order-now">Mulai Membaca</a>
+                        <a href="#" class="button contact-us">Hubungi Kami</a>
+                    </div>
+                </div>
+                <div class="hero-image-wrapper fade-in">
+                    <img src="assets/images/bukuu.png" alt="Tumpukan Buku HIBI">
+                </div>
+            </div>
+            <div class="wave-bottom"></div>
+        </section>
+
+        <section class="about-section" id="about">
+            <div class="section-content">
+                <div class="about-image-wrapper fade-in">
+                    <img src="assets/images/logo1.jpeg" alt="Tentang HIBI" class="about-image">
+                    <div class="image-backdrop"></div>
+                </div>
+                <div class="about-details fade-in">
+                    <h2 class="section-title left-align">About Us</h2>
+                    <p class="text">
+                        Di antara huruf dan makna, kami menghadirkan ruang bagi buku untuk hidup dan berbicara. 
+                        Setiap karya adalah jendela menuju dunia yang lebih luas—menghidupkan imajinasi, 
+                        memperkaya pengetahuan, dan menyentuh rasa.
+                    </p>
+                   <div class="social-link-list">
+    <!-- Ganti URL facebook di bawah dengan link profil atau halaman Facebook kamu -->
+    <a href="https://www.facebook.com/AdityaLawrence" target="_blank" class="social-link">
+        <i class="fa-brands fa-facebook-f"></i>
+    </a>
+
+    <!-- Ganti URL twitter di bawah dengan link profil X / Twitter kamu -->
+    <a href="https://twitter.com/000000" target="_blank" class="social-link">
+        <i class="fa-brands fa-twitter"></i>
+    </a>
+
+    <!-- Ganti URL instagram di bawah dengan link profil Instagram kamu -->
+    <a href="https://www.instagram.com/loca.archetto" target="_blank" class="social-link">
+        <i class="fa-brands fa-instagram"></i>
+    </a>
+</div>
+                </div>
+            </div>
+        </section>
+
+        <section class="library-section" id="library">
+            <div class="section-content">
+                <h2 class="section-title">Perpustakaan Kita</h2>
+                <ul class="library-list">
+                    <li class="library-item fade-in">
+                        <div class="library-image-container">
+                            <img src="assets/images/atomic-habits.jpeg" alt="Atomic Habits" class="library-image">
+                        </div>
+                        <div class="library-info">
+                            <h3 class="library-title">Atomic Habits</h3>
+                            <p class="text">Buku yang membahas bagaimana kebiasaan kecil dapat membawa perubahan besar, memberikan panduan praktis membangun kebiasaan positif.</p>
+                            <a href="#" class="read-more" data-pdf="assets/book/Atomic_habits.pdf">Lihat Detail
+                                <i class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+                    </li>
+                    <li class="library-item fade-in">
+                        <div class="library-image-container">
+                            <img src="assets/images/sisi-tergelap-surga.jpeg" alt="Sisi Tergelap Surga" class="library-image">
+                        </div>
+                        <div class="library-info">
+                            <h3 class="library-title">Sisi Tergelap Surga</h3>
+                            <p class="text">Kisah realitas keras kehidupan masyarakat bawah di Jakarta, menarasikan perjuangan karakter bertahan hidup di tengah kemiskinan kota.</p>
+                            <a href="#" class="read-more" data-pdf="assets/book/Sisi_Tergelap_Surga.pdf">Lihat Detail
+                                <i class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+                    </li>
+                    <li class="library-item fade-in">
+                        <div class="library-image-container">
+                            <img src="assets/images/laut-bercerita.jpeg" alt="Laut Bercerita" class="library-image">
+                        </div>
+                        <div class="library-info">
+                            <h3 class="library-title">Laut Bercerita</h3>
+                            <p class="text">Novel yang mengangkat kisah kelam penculikan aktivis mahasiswa pada masa Orde Baru tahun 1997-1998 melalui tokoh Biru Laut.</p>
+                             <a href="#" class="read-more" data-pdf="assets/book/Laut_bercerita.pdf">Lihat Detail
+                                <i class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+                    </li>
+                    <li class="library-item fade-in">
+                        <div class="library-image-container">
+                            <img src="assets/images/lemon-tree.jpeg" alt="Lemon Tree" class="library-image">
+                        </div>
+                        <div class="library-info">
+                            <h3 class="library-title">As Long As The Lemon Trees Grow</h3>
+                            <p class="text">Fiksi remaja romantis berlatar belakang revolusi Suriah, berfokus pada perjuangan, trauma, dan harapan tokoh Salama.</p>
+                             <a href="#" class="read-more" data-pdf="assets/book/As_Long_as_the_Lemon_Trees_Grow.pdf">Lihat Detail
+                                <i class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+                    </li>
+                    <li class="library-item fade-in">
+                        <div class="library-image-container">
+                            <img src="assets/images/ilusi.jpeg" alt="Ilusi" class="library-image">
+                        </div>
+                        <div class="library-info">
+                            <h3 class="library-title">The Illusion of Choice</h3>
+                            <p class="text">Konsep psikologis di mana individu merasa memiliki kebebasan memilih, padahal opsi telah diatur oleh pihak lain.</p>
+                             <a href="#" class="read-more" data-pdf="assets/book/The_Illusion_of_Choice.pdf">Lihat Detail
+                                <i class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+                    </li>
+                    <li class="library-item fade-in">
+                        <div class="library-image-container">
+                            <img src="assets/images/the-psiklogi-money.jpeg" alt="The Psychology of Money" class="library-image">
+                        </div>
+                        <div class="library-info">
+                            <h3 class="library-title">The Psychology of Money</h3>
+                            <p class="text">Menggali lebih dalam bagaimana psikologi memengaruhi keputusan finansial kita dan hubungan emosi dengan uang.</p>
+                             <a href="#" class="read-more" data-pdf="assets/book/The_Psychology_of_Money.pdf">Lihat Detail
+                                <i class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="gallery-section" id="gallery">
+            <div class="section-content fade-in">
+                <h2 class="section-title">Apa Kata Mereka?</h2>
+                <div class="slider-container swiper">
+                    <ul class="galery-list swiper-wrapper">
+                        <li class="galery-card swiper-slide">
+                            <i class="fa-solid fa-quote-left quote-icon"></i>
+                            <p class="feedback">"Menjelajahi setiap sudut laman ini terasa begitu presisi dan tanpa cela. Bagaikan perahu yang meluncur di atas aliran sungai yang tenang."</p>
+                            <div class="user-info">
+                                <img src="assets/images/Aglaea.jpeg" alt="Aglaea" class="user-image">
+                                <h3 class="name">Aglaea</h3>
+                            </div>
+                        </li>
+                        <li class="galery-card swiper-slide">
+                            <i class="fa-solid fa-quote-left quote-icon"></i>
+                            <p class="feedback">"Pemilihan tata huruf dalam gulungan digital ini bagaikan tarian pena seorang maestro. Membuat mata enggan berpaling walau telah menyelami ribuan bait."</p>
+                            <div class="user-info">
+                                <img src="assets/images/Ruan Mei.jpeg" alt="Ruan Mei" class="user-image">
+                                <h3 class="name">Ruan Mei</h3>
+                            </div>
+                        </li>
+                        <li class="galery-card swiper-slide">
+                            <i class="fa-solid fa-quote-left quote-icon"></i>
+                            <p class="feedback">"Hadirnya fitur mode malam merupakan oase bagi para perindu sunyi. Latar gulita tidak menyilaukan, melainkan mendekap pandangan dengan kelembutan."</p>
+                            <div class="user-info">
+                                <img src="assets/images/Phrolova.jpeg" alt="Phrolova" class="user-image">
+                                <h3 class="name">Phrolova</h3>
+                            </div>
+                        </li>
+                        <li class="galery-card swiper-slide">
+                            <i class="fa-solid fa-quote-left quote-icon"></i>
+                            <p class="feedback">"Berlayar di situs ini laksana mengarungi samudra ilmu yang tiada batas. Dari rima klasik yang membangkitkan nostalgia hingga 
+                            prosa kontemporer yang menggugah nalar, segala dahaga akan hikayat berhasil terpuaskan dalam satu pelukan ruang maya"</p>
+                            <div class="user-info">
+                                <img src="assets/images/Ouzuka Mai.jpeg" alt="Ouzuka Mai" class="user-image">
+                                <h3 class="name">Ouzuka Mai</h3>
+                            </div>
+                        </li>
+                        <li class="galery-card swiper-slide">
+                            <i class="fa-solid fa-quote-left quote-icon"></i>
+                            <p class="feedback">Kinerja pemuatan halaman di bilik maya ini patut mendapat kidung pujian. Transisi dari satu bab ke bab berikutnya berkelebat secepat 
+                            embusan angin bayu, menjaga nyala antusiasme agar tidak redup di tengah asyiknya menyelami mahakarya"</p>
+                            <div class="user-info">
+                                <img src="assets/images/Oumi Shiori.jpeg" alt="Oumi Shiori" class="user-image">
+                                <h3 class="name">Oumi Shiori</h3>
+                            </div>
+                        </li>
+                        <li class="galery-card swiper-slide">
+                            <i class="fa-solid fa-quote-left quote-icon"></i>
+                            <p class="feedback">"Antarmuka laman ini tak ubahnya gerbang menuju buana imajinasi. Gradasi warna dan desainnya saling merajut harmoni, 
+                            memanjakan netra layaknya kanvas senja yang menenangkan jiwa para pengelana aksara kala pertama kali berlabuh."</p>
+                            <div class="user-info">
+                                <img src="assets/images/Castorice.jpeg" alt="Castorice" class="user-image">
+                                <h3 class="name">Castorice</h3>
+                            </div>
+                        </li>
+                        <li class="galery-card swiper-slide">
+                            <i class="fa-solid fa-quote-left quote-icon"></i>
+                            <p class="feedback">"Kendati koleksi yang disuguhkan sungguh menawan, kompas pencarian rasanya masih membutuhkan sedikit aahan. Alangkah eloknya bila ia mampu meraba 
+                            kata kunci dengan lebih peka, menuntun pembaca pada harta karun literasi yang tersembunyi dengan presisi yang lebih tajam."</p>
+                            <div class="user-info">
+                                <img src="assets/images/Trinnon.jpeg" alt="Trinnon" class="user-image">
+                                <h3 class="name">Trinnon</h3>
+                            </div>
+                        </li>
+                        <li class="galery-card swiper-slide">
+                            <i class="fa-solid fa-quote-left quote-icon"></i>
+                            <p class="feedback">"Situs ini akan terasa lebih bermakna apabila disematkan sebuah beranda bagi para penikmat sabda untuk saling bertukar asa. Sebuah pelataran diskusi yang
+                            mengizinkan para perindu buku menyulam opini dan mengurai makna dari setiap epik yang telah khatam diselami."</p>
+                            <div class="user-info">
+                                <img src="assets/images/Cyrene.jpeg" alt="Cyrene" class="user-image">
+                                <h3 class="name">Cyrene</h3>
+                            </div>
+                        </li>
+                         <li class="galery-card swiper-slide">
+                            <i class="fa-solid fa-quote-left quote-icon"></i>
+                            <p class="feedback">"Buku yang membahas bagaimana kebiasaan kecil dapat membawa perubahan besar, memberikan panduan praktis membangun kebiasaan positif."</p>
+                            <div class="user-info">
+                                <img src="assets/images/Stelle.jpeg" alt="Stelle" class="user-image">
+                                <h3 class="name">Stelle</h3>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
+            </div>
+        </section>
+        <div id="read-modal" class="modal">
+            <div class="modal-content">
+                <span class="close-btn" data-target="read-modal">&times;</span>
+                <h2 style="color: var(--primary-color); margin-bottom: 10px;">Pilih Kategori</h2>
+                <p style="color: var(--text-muted); font-size: 14px; margin-bottom: 20px;">Mau baca apa hari ini?</p>
+                <div class="category-grid">
+                    <button class="category-btn"><i class="fa-solid fa-book-journal-whills"></i> Fiksi</button>
+                    <button class="category-btn"><i class="fa-solid fa-scale-balanced"></i> Non-Fiksi</button>
+                    <button class="category-btn"><i class="fa-solid fa-seedling"></i> Self-Improvement</button>
+                    <button class="category-btn"><i class="fa-solid fa-landmark"></i> Sejarah</button>
+                </div>
+            </div>
+        </div>
+
+        <div id="contact-modal" class="modal">
+            <div class="modal-content">
+                <span class="close-btn" data-target="contact-modal">&times;</span>
+                <h2 style="color: var(--primary-color); margin-bottom: 10px;">Hubungi Kami</h2>
+                <p style="color: var(--text-muted); font-size: 14px;">Ada pertanyaan atau masukan? Kirimkan pesanmu di sini.</p>
+                <form class="contact-form">
+                    <input type="text" placeholder="Nama Lengkap" required>
+                    <input type="email" placeholder="Email" required>
+                    <textarea rows="4" placeholder="Tulis pesanmu..." required></textarea>
+                    <button type="submit" class="button order-now" style="width: 100%; border: none;">Kirim Pesan <i class="fa-solid fa-paper-plane"></i></button>
+                </form>
+            </div>
+        </div>
+
+        <div id="book-modal" class="modal">
+            <div class="modal-content book-modal-content">
+                <span class="close-btn" data-target="book-modal">&times;</span>
+                <div class="book-modal-body">
+                    <img id="modal-book-img" src="" alt="Book Cover">
+                    <div class="book-modal-info">
+                        <h2 id="modal-book-title" style="color: var(--primary-color);">Judul Buku</h2>
+                        <p id="modal-book-desc" style="color: var(--text-muted); line-height: 1.6;">Deskripsi buku...</p>
+                        <a id="modal-read-btn" href="#" target="_blank" class="button order-now" style="border : none; margin-top: auto; width: fit-content; display: inline-block; ">Baca Sekarang<i class="fa-solid fa-book-open"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
